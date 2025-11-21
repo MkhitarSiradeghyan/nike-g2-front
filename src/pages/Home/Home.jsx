@@ -1,9 +1,11 @@
 import React from 'react'
-import Hero from '../../components/Hero/Hero'
+import s from "./Home.module.sass"
 
 const Home = () => {
   return (
-    <Hero/>
+    <div>
+
+    </div>
   )
 }
 
