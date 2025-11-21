@@ -1,11 +1,10 @@
 import React from 'react'
-import s from "./Home.module.sass"
+import Hero from '../../components/Hero/Hero'
+import Brands from '../../components/Brands/Brands'
 
 const Home = () => {
   return (
-    <div>
-
-    </div>
+    <Brands/>
   )
 }
 
