@@ -1,10 +1,10 @@
 import React from 'react'
 import Hero from '../../components/Hero/Hero'
-import Brands from '../../components/Brands/Brands'
+import Banner from '../../components/Banner/Banner'
 
 const Home = () => {
   return (
-    <Brands/>
+    <Banner/>
   )
 }
 
