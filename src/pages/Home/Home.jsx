@@ -1,12 +1,10 @@
 import React from 'react'
-import s from "./Home.module.sass"
-import MainForm from '../../components/MainForm/MainForm'
+import Hero from '../../components/Hero/Hero'
+import Banner from '../../components/Banner/Banner'
 
 const Home = () => {
   return (
-    <div>
-      <MainForm/>
-    </div>
+    <Banner/>
   )
 }
 
