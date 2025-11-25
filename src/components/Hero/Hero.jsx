@@ -1,4 +1,5 @@
 import React from 'react'
+import MainForm from '../MainForm/MainForm'
 
 const Hero = () => {
   return (

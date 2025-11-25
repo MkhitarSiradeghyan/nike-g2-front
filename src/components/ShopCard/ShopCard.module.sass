@@ -1,0 +1,55 @@
+.shopcard
+    +flex(start,start,column)
+    
+    width: 100vh
+    
+    .shopname
+        text-transform: capitalize
+        font-size: $size-4
+        text-color: $color-black-0
+        font-family: $font-1
+    .percent
+        +flex
+        gap: 13px
+        width: 35px
+        height: 20px
+        .star
+            +flex
+            color: $color-warning
+
+        .number
+            font-size: $size-2
+    .prices
+        +flex
+        gap: 10px
+        width: 200px
+        height: 35px
+        .newprice
+            font-size: $size-4
+            color: $color-black-0
+            font-family: $font-1
+            font-weigth: 700
+            
+            
+        .oldprice
+            font-size: $size-4
+            color: $color-black-4
+            font-family: $font-1
+            position: relative
+            .line
+                position: absalute
+                +pos-center
+                border: 1px solid $color-black-4
+                width: 100%
+                
+           
+        .discount
+            background: #f4a2a8ff
+            width: 35px
+            height: 16px
+            border-radius: 50%
+            font-size: $size-1
+            color: $color-danger
+            +flex
+            justify-content: center
+          
