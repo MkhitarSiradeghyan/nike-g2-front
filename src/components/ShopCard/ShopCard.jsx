@@ -14,12 +14,12 @@ const ShopCard = () => {
             <div className={s.percent}>
                 <div className={s.star}><IoIosStar/><IoIosStar/><IoIosStar/><TiStarHalf /></div>
                 
-                <div className={s.number}> 3.5/5</div>
+                <div className={s.number}> <span className={s.star_percent}>3.5/</span><span className={s.five}>5</span></div>
             </div>
             <div className={s.prices}>
-                <div className={s.newprice}>100$</div>
-                <div className={s.oldprice}>260$
-                    <div className={s.line}></div>
+                <div className={s.newprice}>$100</div>
+                <div className={s.oldprice}>$260
+                    
                 </div>
                 <div className={s.discount}>-20%</div>
             </div>
