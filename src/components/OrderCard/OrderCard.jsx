@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './OrderCard.module.sass'
+import { GoTag } from "react-icons/go"
 import { FaArrowRightLong } from "react-icons/fa6"
 
 
@@ -25,7 +26,10 @@ const OrderCard = () => {
                     <div className={s.monay2}>$467</div>
                 </div>
                 <div className={s.inp}>
-                    <input className={s.input} type="text"  placeholder='Add promo code'/>
+                    <div className={s.div}>
+                        <input className={s.input} type="text"/>
+                        <div className={s.icon}><GoTag />Add promo code</div>
+                    </div>
                     <button className={s.btn}>Apply</button>
                 </div>
                <button className={s.btn1}>Go to Checkout <FaArrowRightLong /></button>
