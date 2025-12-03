@@ -1,12 +1,11 @@
 import React from 'react'
-import Hero from '../../components/Hero/Hero'
-import MainForm from '../../components/MainForm/MainForm'
-import ShopCard from '../../components/ShopCard/ShopCard'
+import OrderCard from '../../components/OrderCard/OrderCard'
+
 
 
 const Home = () => {
   return (
-    <ShopCard/>
+    <OrderCard/>
   )
 }
 

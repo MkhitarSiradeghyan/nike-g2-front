@@ -1,24 +1,27 @@
-.wrap
-    width: 1200px
-    height: 180px
-    background: $color-black-0
-    display: grid
-    grid-template-columns: 1 1fr
-    grid-template-rows: 1 1fr
-    .text
-        color: color-white
-        font-size: size-6
-        grid-columns: 1/0/0/2
-    
-    .adress
-        height:50px
-        width:350px
-        background: color-grey-1
-        border-radius: radius-2
-        grid-columns: 2/0/1/1
-    .btn
-        height:50px
-        width:350px
-        background: color-grey-1
-        border-radius: radius-2
-        grid-columns: 2/1/1/2
+.main_form
+    .wrap
+        background: $color-black-0
+        border-radius: $size-4
+        padding: 48px 60px
+          
+        +flex
+        .text
+            font-size: $size-8
+            font-family: $font-2
+            color: $color-white
+            text-transform: uppercase
+            max-width: 600px
+            flex-grow: 1
+        .form
+            gap: 14px
+            width: 90%
+            +flex(center,end, column)
+            .btn
+                border-radius: $radius-full
+                height: 40px
+                width: 100%
+                max-width: 400px
+                padding: 0 16px
+                font-size: $size-3
+                font-weight: 500
+                

@@ -1,9 +1,9 @@
 import React from 'react'
-import MainForm from '../MainForm/MainForm'
+import hero from "../../assets/img/hero.png"
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <></>
   )
 }
 
