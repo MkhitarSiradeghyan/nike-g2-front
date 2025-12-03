@@ -16,16 +16,16 @@ $color-white: #ffffffff
 $font-1: "Satoshi", sans-serif
 $font-2: "Archivo Black", sans-serif
 
-$size-1: 12px
-$size-2: 14px
-$size-3: 16px
-$size-4: 20px
-$size-5: 24px
-$size-6: 32px
-$size-7: 36px
-$size-8: 40px
-$size-9: 48px
-$size-10: 64px
+$size-1: clamp( 8px, calc( 8px + (12 - 8) * ((100vw - 320px) / 1600)), 12px)
+$size-2: clamp(10px, calc(10px + (14 - 10) * ((100vw - 320px) / 1600)), 14px)
+$size-3: clamp(12px, calc(12px + (16 - 12) * ((100vw - 320px) / 1600)), 16px)
+$size-4: clamp(14px, calc(14px + (20 - 14) * ((100vw - 320px) / 1600)), 20px)
+$size-5: clamp(18px, calc(18px + (24 - 18) * ((100vw - 320px) / 1600)), 24px)
+$size-6: clamp(24px, calc(24px + (32 - 24) * ((100vw - 320px) / 1600)), 32px)
+$size-7: clamp(28px, calc(28px + (36 - 28) * ((100vw - 320px) / 1600)), 36px)
+$size-8: clamp(32px, calc(32px + (40 - 32) * ((100vw - 320px) / 1600)), 40px)
+$size-9: clamp(36px, calc(36px + (48 - 36) * ((100vw - 320px) / 1600)), 48px)
+$size-10: clamp(40px, calc(40px + (64 - 40) * ((100vw - 320px) / 1600)), 64px)
 
 $transition: 0.3s
 
@@ -36,3 +36,4 @@ $radius-4: 16px
 $radius-5: 20px
 $radius-6: 40px
 $radius-full: calc(infinity * 1px)
+
