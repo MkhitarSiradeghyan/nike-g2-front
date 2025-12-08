@@ -1,11 +1,13 @@
 import React from 'react'
-import OrderCard from '../../components/OrderCard/OrderCard'
+import ShopWindow from '../../components/ShopWindow/ShopWindow'
+
+
 
 
 
 const Home = () => {
   return (
-    <OrderCard/>
+    <ShopWindow/>
   )
 }
 
