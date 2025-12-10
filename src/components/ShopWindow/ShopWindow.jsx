@@ -12,7 +12,11 @@ const ShopWindow = () => {
             <Container> 
             <div className={s.wrap}>
                 <div className={s.grid}>
+<<<<<<< HEAD
                     <span className={s.img1}><img src={img} alt="img" /></span>
+=======
+                    <span className={s.img1}><img src={img} alt="img1" /></span>
+>>>>>>> 10b41955390c6767fff80b2825e3f0e388a46502
                     <span className={s.img2}><img src={img} alt="img" /></span>
                     <span className={s.img3}><img src={img} alt="img" /></span>
                     <span className={s.img4}><img src={img} alt="img" /></span>
@@ -33,6 +37,7 @@ const ShopWindow = () => {
                                 </div>
                                 <p className={s.text}>This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
                                 <hr className={s.line}/>
+<<<<<<< HEAD
                                     <div className={s.colors}>
                                     <h4 className={s.title2}>select colors</h4>
                                    <div className={s.div}>
@@ -62,6 +67,14 @@ const ShopWindow = () => {
                                     <button className={s.cart}>Add to Cart</button>
                                 </div>
 
+=======
+                                   <div className={s.colors}>
+                                    <h4 className={s.title2}>select colors</h4>
+                                    <div className={`${s.box} ${s.box1}`}></div>
+                                    <div className={`${s.box} ${s.box2}`}></div>
+                                    <div className={`${s.box} ${s.box3}`}></div>
+                                    </div>            
+>>>>>>> 10b41955390c6767fff80b2825e3f0e388a46502
                 </div>      
             </div>
             </Container>
