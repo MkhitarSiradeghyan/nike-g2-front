@@ -1,0 +1,36 @@
+.title
+    color: $color-black-0
+    font-size: 40px
+    text-transform: uppercase
+.firstcard
+    +flex(start,center,row)
+    gap: 2em
+    .img
+        width: 150px
+        height: 150px
+        gap: 2em
+    .price
+        color: $color-black-0
+        font-size: 24px
+        +flex(start,center,column)
+    .h3
+        color: $color-black-0
+        font-size: 20px
+        +flex(start,center,row)
+    .trash
+        color: $color-danger
+    .text
+        +flex(center,center,column)
+        gap: 0.5em
+        .text1
+            +flex(center,center,row)
+            gap: 0.5em
+        .text2
+            +flex(center,center,row)
+            gap: 0.5em
+            .color
+                color: $color-black-0
+                font-size: 14px
+            .description
+                color: $color-black-4
+                font-size: 14px
