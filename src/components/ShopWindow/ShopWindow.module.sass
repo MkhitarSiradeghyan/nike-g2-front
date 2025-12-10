@@ -1,29 +1,30 @@
 .shopwindow
   .wrap
-    display: flex
+    gap: 40px
+    +flex(space-between, start)
     .grid
       display: grid
       grid-template-columns: 1fr 3fr
       grid-template-rows: repeat(2, 1fr)
       grid-template-areas: (
-      "img1 img4 "
-      "img2 img4 "
-      "img3 img4 " )
+      "img1 img4"
+      "img2 img4"
+      "img3 img4" )
       gap: 14px
       
-
-    .img1
-      border-radius: $radius-5
-      grid-area: img1
-    .img2
-      border-radius: $radius-5
-      grid-area: img2
-    .img3
-      border-radius: $radius-5
-      grid-area: img3
-    .img4
-      border-radius: $radius-5
-      grid-area: img4
+      .img
+        overflow: hidden
+        border-radius: $radius-5
+        img
+          +img-fit(cover)
+      .img1
+        grid-area: img1
+      .img2
+        grid-area: img2
+      .img3
+        grid-area: img3
+      .img4
+        grid-area: img4
     .menu
       +flex
       flex-direction: column
@@ -64,7 +65,7 @@
         text-decoration: line-through
         font-weight: 700
       .discount
-        background: #f4a2a8ff
+        background: $color-danger-bg
         border-radius: $radius-full
         width: 60px
         height: 28px
@@ -152,12 +153,6 @@
         border-radius: $radius-full
         color: $color-black-3
         width: 30%
-
-
-        .minus
-          font-size: $size-7
-        .plus
-          font-size: $size-7
       .cart
         background: $color-black-0
         border-radius: $radius-full
