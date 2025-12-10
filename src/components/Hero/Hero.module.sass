@@ -1,12 +1,10 @@
 .hero
-    height: calc(100vh - 60px)
     background: $color-grey-3
     .wrap
-        background: no-repeat center right / auto 100%
+        padding: 100px 0
+        background: no-repeat bottom right / auto 90%
         height: 100%
         +flex(start, center)
-        padding: 100px 0
-
         .box
             padding: 50px 50px 50px 0
             width: 90%
@@ -37,20 +35,19 @@
                 font-size: $size-3
 
             .stats
-                +flex
-                gap: 32px
+                +flex(center, center)
+                
+                .item
+                    .number
+                        color: $color-black-0
+                        font-size: $size-8
+                        font-weight: 700
 
-
-                .line
-                    width: 1px
-                    background: $color-black-1
-
-                .number
-                    color: $color-black-0
-                    font-size: $size-8
-                    font-weight: 700
-
-                .text
-                    color: $color-black-4
-                    font-size: $size-3
-                    font-weight: 400
+                    .text
+                        color: $color-black-4
+                        font-size: $size-3
+                        font-weight: 400
+                    &:not(:last-of-type)
+                        padding-right: 32px
+                        margin-right: 32px
+                        border-right: 1px solid $color-black-1

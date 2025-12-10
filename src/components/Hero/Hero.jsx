@@ -21,12 +21,10 @@ const Hero = () => {
                 <div className={s.number}>200+</div>
                 <div className={s.text}>International Brands</div>
               </div>
-              <div className={s.line}></div>
               <div className={s.item}>
                 <div className={s.number}>2,000+</div>
                 <div className={s.text}>High-Quality Products</div>
               </div>
-              <div className={s.line}></div>
               <div className={s.item}>
                 <div className={s.number}>30,000+</div>
                 <div className={s.text}>Happy Customers</div>
