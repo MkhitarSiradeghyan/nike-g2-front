@@ -1,0 +1,161 @@
+.shopwindow
+  .wrap
+    gap: 40px
+    +flex(space-between, start)
+    .grid
+      display: grid
+      grid-template-columns: 1fr 3fr
+      grid-template-rows: repeat(2, 1fr)
+      grid-template-areas: (
+      "img1 img4"
+      "img2 img4"
+      "img3 img4" )
+      gap: 14px
+      
+      .img
+        overflow: hidden
+        border-radius: $radius-5
+        img
+          +img-fit(cover)
+      .img1
+        grid-area: img1
+      .img2
+        grid-area: img2
+      .img3
+        grid-area: img3
+      .img4
+        grid-area: img4
+    .menu
+      +flex
+      flex-direction: column
+      gap: 14px
+      .title
+        font-size: $size-8
+        font-weight: 700
+        color: $color-black-0
+        text-transform: capitalize
+      .percent
+        +flex
+        gap: 14px
+        .star
+          +flex
+          gap: 6px
+          color: $color-warning
+          font-size: $size-4
+        .number
+            font-size: $size-2
+            .five
+              color: $color-black-4
+    .prices
+      +flex
+      gap: 20px
+      gap: 20px
+      width: 200px
+      height: 35px
+      .newprice
+        font-size: $size-4
+        color: $color-black-0
+        font-weight: 700
+
+
+      .oldprice
+        font-size: $size-4
+        color: $color-black-2
+        position: relative
+        text-decoration: line-through
+        font-weight: 700
+      .discount
+        background: $color-danger-bg
+        border-radius: $radius-full
+        width: 60px
+        height: 28px
+        font-size: $size-1
+        color: $color-danger
+        +flex
+        justify-content: center
+        align-items: center
+    .text
+      font-size: $size-3
+      color: $color-black-3
+      font-weight: 400
+    .line
+      border-color: $color-black-1
+      +flex
+      gap: 20px
+    .colors
+      +flex
+      flex-direction: column
+      gap: 16px
+      .title2
+        font-size: $size-3
+        color: $color-black-3
+        font-weight: 400
+        text-transform: capitalize
+      .div
+        +flex
+        gap: 16px
+        
+        .box
+          +flex(center, center)
+          width: 40px
+          aspect-ratio: 1/1
+          border-radius: 50%
+          
+          color: $color-white
+          
+        .box1
+          width: 40px
+          aspect-ratio: 1/1
+          background:#4F4631
+        .box2
+          width: 40px
+          aspect-ratio: 1/1
+          background: #314F4A
+        .box3
+          width: 40px
+          aspect-ratio: 1/1
+          background:#31344F
+    .choose
+      +flex
+      gap: 16px
+      flex-direction: column
+      .title2
+        font-size: $size-3
+        color: $color-black-3
+        font-weight: 400
+        text-transform: capitalize
+      .sizes
+        height: 46px
+        +flex
+        gap: 12px
+
+        .size
+          +flex(center, center)
+          gap: 12px
+          padding: 20px
+          background: $color-grey-2
+          border-radius: $radius-full
+          color: $color-black-3
+          
+        .large
+          background: $color-black-0
+          color: $color-white
+        
+    .btn
+      +flex(space-between)
+      gap: 20px
+      height: 52px
+      .numbers
+        +flex(space-between, center)
+        gap: 12px
+        padding: 20px
+        background: $color-grey-2
+        border-radius: $radius-full
+        color: $color-black-3
+        width: 30%
+      .cart
+        background: $color-black-0
+        border-radius: $radius-full
+        color: $color-white
+        width: 70%
+
