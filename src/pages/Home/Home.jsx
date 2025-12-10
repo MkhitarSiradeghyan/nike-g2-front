@@ -1,10 +1,12 @@
 import React from 'react'
-import Hero from '../../components/Hero/Hero'
-import Banner from '../../components/Banner/Banner'
+import OrderCard from '../../components/OrderCard/OrderCard'
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs'
+
+
 
 const Home = () => {
   return (
-    <Banner/>
+    <Breadcrumbs/>
   )
 }
 
