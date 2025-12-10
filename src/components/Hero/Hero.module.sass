@@ -1,0 +1,53 @@
+.hero
+    background: $color-grey-3
+    .wrap
+        padding: 100px 0
+        background: no-repeat bottom right / auto 90%
+        height: 100%
+        +flex(start, center)
+        .box
+            padding: 50px 50px 50px 0
+            width: 90%
+            max-width: 700px
+            +flex(center, stretch, column)
+            gap: 32px
+            backdrop-filter: blur(10px)
+            border-radius: $radius-5
+
+            .title
+                font-family: $font-2
+                font-size: $size-10
+                text-transform: uppercase
+                line-height: 1
+
+            .desc
+                font-size: $size-3
+                color: $color-black-4
+
+            .button
+                width: 210px
+                height: 50px
+                background: $color-black-0
+                border-radius: $radius-full
+                color: $color-white
+                font-weight: 500
+                text-transform: capitalize
+                font-size: $size-3
+
+            .stats
+                +flex(center, center)
+                
+                .item
+                    .number
+                        color: $color-black-0
+                        font-size: $size-8
+                        font-weight: 700
+
+                    .text
+                        color: $color-black-4
+                        font-size: $size-3
+                        font-weight: 400
+                    &:not(:last-of-type)
+                        padding-right: 32px
+                        margin-right: 32px
+                        border-right: 1px solid $color-black-1
