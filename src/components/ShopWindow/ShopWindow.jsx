@@ -1,22 +1,21 @@
 import React from 'react'
 import s from './ShopWindow.module.sass'
-import img1 from "../../assets/img/card_img_ex.png"
-import img2 from "../../assets/img/card_img_ex.png"
-import img3 from "../../assets/img/card_img_ex.png"
-import img4 from "../../assets/img/card_img_ex.png"
+import img from "../../assets/img/card_img_ex.png"
 import Container from '../Container/Container'
 import { IoIosStar } from "react-icons/io"
 import { TiStarHalf } from "react-icons/ti"
+import { TiTick } from "react-icons/ti"
 
 const ShopWindow = () => {
     return (
         <div className={s.shopwindow}>
-            <Container>
+            <Container> 
+            <div className={s.wrap}>
                 <div className={s.grid}>
-                    <span className={s.img1}><img src={img1} alt="img1" /></span>
-                    <span className={s.img2}><img src={img2} alt="img2" /></span>
-                    <span className={s.img3}><img src={img3} alt="img3" /></span>
-                    <span className={s.img4}><img src={img4} alt="img4" /></span>
+                    <span className={s.img1}><img src={img} alt="img" /></span>
+                    <span className={s.img2}><img src={img} alt="img" /></span>
+                    <span className={s.img3}><img src={img} alt="img" /></span>
+                    <span className={s.img4}><img src={img} alt="img" /></span>
                 </div>
                 <div className={s.menu}>
                     <h2 className={s.title}>one life graphic t-shirt</h2>
@@ -33,14 +32,38 @@ const ShopWindow = () => {
                                     <div className={s.discount}>-40%</div>
                                 </div>
                                 <p className={s.text}>This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
-                                <br/>
-                                   <div className={s.colors}>
+                                <hr className={s.line}/>
+                                    <div className={s.colors}>
                                     <h4 className={s.title2}>select colors</h4>
-                                    <div className={`s.box``s.box1`}></div>
-                                    <div className={`s.box``s.box2`}></div>
-                                    <div className={`s.box``s.box3`}></div>
-                                    </div>            
+                                   <div className={s.div}>
+                                    <div className={`${s.box} ${s.box1}`}><TiTick /></div>
+                                    <div className={`${s.box} ${s.box2}`}></div>
+                                    <div className={`${s.box} ${s.box3}`}></div>
+                                    </div>
+                                </div>        
+                                <hr className={s.line}/>    
+                                <div className={s.choose}>
+                                    <h4 className={s.title2}>choose size</h4>
+                                    <div className={s.sizes}>
+                                        <button className={`${s.size} ${s.small}`}>small</button>
+                                        <button className={`${s.size} ${s.medium}`}>medium</button>
+                                        <button className={`${s.size} ${s.large}`}>large</button>
+                                        <button className={`${s.size} ${s.xlarge}`}>x-large</button>
+                                        
+                                    </div>
+                                </div>
+                                <hr className={s.line}/>
+                                <div className={s.btn}>
+                                    <div className={s.numbers}> 
+                                        <button className={s.minus}>-</button>
+                                        <span>1</span>
+                                        <button className={s.plus}>+</button>
+                                    </div>
+                                    <button className={s.cart}>Add to Cart</button>
+                                </div>
+
                 </div>      
+            </div>
             </Container>
         </div>
     )
