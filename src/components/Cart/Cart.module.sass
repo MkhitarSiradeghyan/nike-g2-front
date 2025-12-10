@@ -1,0 +1,53 @@
+.border
+    padding: 25px
+    display: flex
+    gap: 25px
+    width: 715px
+    height: 510px
+    border: 2px solid $color-black-1
+    border-radius: 20px
+    .section
+        position: relative
+        display: flex
+        gap: 25px
+        .img
+            width: 125px
+            height: 125px
+        .characters
+            display: flex
+            gap: 5px
+            flex-direction: column
+            .name
+                display: flex
+                font-weight: 700
+                font-family: "Satoshi"
+                font-size: 20px
+            .size
+                font-weight: 400
+                font-size: 15px
+                .large
+                    color: $color-black-3
+            .color
+                font-weight: 400
+                font-size: 15px
+                .white
+                    color: $color-black-3
+            .price
+                position: relative
+                display: flex
+                font-weight: 700
+                font-family: "Satoshi"
+                font-size: 24px
+                font-style: Bold
+                .icon
+                    position: absolute
+                    top: 3px
+                .money
+                    position: absolute
+                    left: 25px
+        .right
+            position: relative
+            .delete 
+                color: $color-danger
+                position: absolute
+                right: 0
