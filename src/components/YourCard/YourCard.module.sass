@@ -19,6 +19,8 @@
         +flex(start,center,row)
     .trash
         color: $color-danger
+.arrange
+    +flex(center,start,column)
     .text
         +flex(center,center,column)
         gap: 0.5em
@@ -34,3 +36,14 @@
             .description
                 color: $color-black-4
                 font-size: 14px
+.icons
+    +flex(end,center,column)
+    gap: 4em
+    .icon
+        width: 100px
+        height: 30px
+        background: $color-black-1
+        color: $color-black-0
+        +flex(center,center,row)
+        gap: 0.5em
+        border-radius: $radius-3
