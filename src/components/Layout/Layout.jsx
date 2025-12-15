@@ -3,6 +3,7 @@ import { Outlet } from "react-router";
 import Banner from "../Banner/Banner";
 import Header from "../Header/Header";
 import MainForm from "../MainForm/MainForm";
+import Footer from "../Footer/Footer";
 
 const Layout = () => {
   return (
@@ -11,7 +12,7 @@ const Layout = () => {
     <Header/>
       <Outlet />
       <MainForm/>
-      
+      <Footer/>
     </>
   );
 };
