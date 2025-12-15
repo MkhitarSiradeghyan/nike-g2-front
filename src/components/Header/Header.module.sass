@@ -1,3 +1,49 @@
 .header
     height: 96px
     .wrap
+        +flex(space-between, center)
+        height: 100%
+        gap: 3em
+        .nav
+            +flex(center, center)
+            gap: 2em
+            .link   
+                font-weight: 400
+                font-size: $size-3
+                color: $color-black-0
+        .form
+            height: 48px
+            min-width: 300px
+            max-width: 600px
+            flex-grow: 1
+            position: relative
+            .input
+                background: $color-grey-3
+                border-radius: $radius-full
+                height: 100%
+                width: 100%
+                padding: 0 1em
+                transition: $transition
+                &:focus ~ .placeholder, &:not(:placeholder-shown) ~ .placeholder
+                    transition: $transition
+                    opacity: 0
+            .placeholder
+                pointer-events: none
+                position: absolute
+                top: 50%
+                left: 1em
+                translate: 0 -50%
+                +flex(start, center)
+                gap: 0.5em
+                color: $color-black-3
+                .icon
+                    font-size: $size-4
+                .p_text
+                    font-size: $size-3
+        .others
+            +flex(center, center)
+            gap: 2em
+            font-size: $size-5
+            .other_item
+                cursor: pointer
+                
