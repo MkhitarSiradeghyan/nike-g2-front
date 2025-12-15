@@ -6,6 +6,7 @@ import Wrap from "../../components/Wrap/Wrap";
 import ShopCard from "../../components/ShopCard/ShopCard";
 import Dress from "../../components/Dress/Dress";
 import ReviewCard from "../../components/ReviewCard/ReviewCard";
+import Comments from "../../components/Comments/Comments";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       </Wrap>
       <Dress/>
       <ReviewCard/>
+      <Comments/>
     </>
   );
 };

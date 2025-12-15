@@ -1,0 +1,75 @@
+.comments
+    .wrap
+        +flex(start, stretch, column)
+        
+        .titles
+            +flex(center, center)
+            
+            .titles
+                background:$color-white
+                border-bottom: 1px solid $color-black-1
+                width: 100%
+                font-size: $size-4
+                font-weight: 400
+                color: $color-black-3
+                text-transform: capitalize
+                padding: 24px
+            .title1
+            .title2
+                color: $color-black-0
+                font-weight: 500
+                border-bottom: 2px solid $color-black-0
+            .title3
+        .settings
+            padding: 24px
+            +flex(space-between, center)
+            .div
+                +flex(start, center)
+                gap: 8px
+                .review
+                    font-size: $size-5
+                    font-weight: 700
+                    color: $color-black-0
+                    text-transform: capitalize
+                .text
+                    font-size: $size-3
+                    font-weight: 400
+                    color: $color-black-3
+            .buttons
+                +flex(start, center)
+                gap: 10px
+                background: $color-white
+                height: 48px
+                
+                .icon
+                    border-radius: $radius-full
+                    background: $color-grey-2
+                    font-size: $size-3
+                    padding: 14px
+                .sellect
+                    border-radius: $radius-full
+                    background: $color-grey-2
+                    font-size: $size-3
+                   
+                    .btn
+                    .btn1
+                        padding: 14px
+                        border-radius: $radius-full
+                        background: $color-grey-2
+                        font-size: $size-3
+                        
+                .btn2
+                    padding: 14px
+                    border-radius: $radius-full
+                    font-size: $size-3
+        .grid
+            display: grid
+        .btn3
+            background: $color-white
+            border: 1px solid $color-black-3
+            border-radius: $radius-full
+            padding: 15px
+            color: $color-black-0
+            align-self: center  
+            
+            
